@@ -973,6 +973,382 @@
 
           <a class="quick-card" href="https://clcmitec.github.io/bank-details/">
             <div class="card-icon">✎</div>
+   ate{
+      font-size:12px;
+      color:#475467;
+    }
+
+    .mini-stack{
+      display:grid;
+      gap:16px;
+    }
+
+    .help-box{
+      background:linear-gradient(145deg, var(--brand), var(--brand-dark));
+      color:#fff;
+    }
+
+    .help-box .panel-title,
+    .help-box .panel-copy{
+      color:#fff;
+    }
+
+    .help-box .panel-copy{
+      opacity:0.92;
+    }
+
+    .btn-light{
+      background:#fff;
+      color:var(--brand);
+      display:inline-flex;
+      margin-top:4px;
+    }
+
+    .btn-light:hover{
+      transform:translateY(-2px);
+    }
+
+    .notice-list{
+      display:grid;
+      gap:10px;
+      margin-top:6px;
+    }
+
+    .notice-item{
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+      background:#f8fafc;
+      border:1px solid #eef2f6;
+      border-radius:14px;
+      padding:12px;
+    }
+
+    .notice-bullet{
+      width:10px;
+      height:10px;
+      background:var(--gold);
+      border-radius:999px;
+      margin-top:6px;
+      flex-shrink:0;
+    }
+
+    .notice-item p{
+      font-size:14px;
+      color:#475467;
+    }
+
+    .footer{
+      margin-top:36px;
+      background:#081521;
+      color:#d0d5dd;
+    }
+
+    .footer-inner{
+      padding:28px 0;
+      display:flex;
+      justify-content:space-between;
+      gap:18px;
+      flex-wrap:wrap;
+    }
+
+    .footer strong{
+      color:#fff;
+      display:block;
+      margin-bottom:4px;
+    }
+
+    .footer small{
+      color:#98a2b3;
+      font-size:12px;
+    }
+
+    .overlay{
+      position:fixed;
+      inset:0;
+      background:rgba(2, 15, 28, 0.34);
+      opacity:0;
+      visibility:hidden;
+      transition:0.25s ease;
+      z-index:998;
+    }
+
+    .overlay.show{
+      opacity:1;
+      visibility:visible;
+    }
+
+    .drawer{
+      position:fixed;
+      top:0;
+      left:-100%;
+      width:340px;
+      max-width:88%;
+      height:100dvh;
+      background:linear-gradient(180deg, var(--brand), var(--brand-dark));
+      color:#fff;
+      z-index:999;
+      transition:left 0.32s ease;
+      overflow-y:auto;
+      box-shadow:8px 0 30px rgba(0,0,0,0.24);
+    }
+
+    .drawer.show{
+      left:0;
+    }
+
+    .drawer-top{
+      padding:18px 18px 10px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+
+    .drawer-brand{
+      padding:0 20px 14px;
+      border-bottom:1px solid rgba(255,255,255,0.09);
+      margin-bottom:8px;
+    }
+
+    .drawer-brand-top{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .drawer-logo{
+      width:48px;
+      height:auto;
+      background:#fff;
+      border-radius:10px;
+      padding:4px;
+      flex-shrink:0;
+    }
+
+    .drawer-brand strong{
+      display:block;
+      font-size:18px;
+      margin-bottom:4px;
+    }
+
+    .drawer-brand span{
+      color:rgba(255,255,255,0.76);
+      font-size:13px;
+    }
+
+    .drawer-btn{
+      width:42px;
+      height:42px;
+      border:none;
+      border-radius:12px;
+      background:rgba(255,255,255,0.08);
+      color:#fff;
+      font-size:22px;
+      cursor:pointer;
+      display:grid;
+      place-items:center;
+    }
+
+    .drawer-search{
+      padding:12px 18px 10px;
+    }
+
+    .drawer-search input{
+      width:100%;
+      border:none;
+      outline:none;
+      border-radius:999px;
+      background:rgba(255,255,255,0.12);
+      color:#fff;
+      padding:12px 15px;
+    }
+
+    .drawer-search input::placeholder{
+      color:rgba(255,255,255,0.65);
+    }
+
+    .nav{
+      padding:8px 0 24px;
+    }
+
+    .nav a,
+    .accordion-btn{
+      width:100%;
+      border:none;
+      background:none;
+      color:#fff;
+      text-align:left;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      padding:13px 24px;
+      font-size:17px;
+      cursor:pointer;
+      transition:0.2s ease;
+    }
+
+    .nav a:hover,
+    .accordion-btn:hover{
+      background:rgba(255,255,255,0.08);
+    }
+
+    .home-link{
+      font-weight:800;
+    }
+
+    .arrow{
+      width:10px;
+      height:10px;
+      border-right:2px solid #fff;
+      border-bottom:2px solid #fff;
+      transform:rotate(45deg);
+      transition:0.25s ease;
+      flex-shrink:0;
+      margin-top:-2px;
+    }
+
+    .accordion-item.active .arrow{
+      transform:rotate(225deg);
+      margin-top:3px;
+    }
+
+    .submenu{
+      max-height:0;
+      overflow:hidden;
+      transition:max-height 0.28s ease;
+    }
+
+    .accordion-item.active .submenu{
+      max-height:500px;
+    }
+
+    .submenu a{
+      font-size:15px;
+      color:rgba(255,255,255,0.92);
+      padding:11px 24px 11px 56px;
+    }
+
+    .drawer::-webkit-scrollbar{
+      width:7px;
+    }
+
+    .drawer::-webkit-scrollbar-thumb{
+      background:rgba(255,255,255,0.22);
+      border-radius:999px;
+    }
+
+    @media (max-width: 1100px){
+      .quick-grid{
+        grid-template-columns:repeat(2, minmax(0,1fr));
+      }
+
+      .content-grid{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media (max-width: 760px){
+      .utility-right{
+        display:none;
+      }
+
+      .header-inner{
+        height:72px;
+      }
+
+      .brand-logo{
+        width:46px;
+        padding:4px;
+      }
+
+      .brand-title{
+        font-size:17px;
+      }
+
+      .brand-sub{
+        font-size:11px;
+      }
+
+      .hero-box{
+        min-height:520px;
+        border-radius:24px;
+      }
+
+      .hero-content{
+        padding:30px 20px;
+      }
+
+      .hero p{
+        font-size:15px;
+      }
+
+      .hero-stats{
+        grid-template-columns:1fr;
+      }
+
+      .quick-grid{
+        grid-template-columns:1fr;
+      }
+
+      .section-title,
+      .panel-title{
+        font-size:22px;
+      }
+
+      .announcement{
+        align-items:flex-start;
+      }
+
+      .announcement-text{
+        white-space:normal;
+      }
+
+      .announcement-track{
+        padding-left:0;
+        animation:none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <div class="utility-left">
+        <span class="utility-pill">Official Portal</span>
+        <span>MITEC Casual Labour | Part Time, Attendance, Forms & Updates</span>
+      </div>
+      <div class="utility-right">
+        <span>Support Hours: 9:00 AM - 6:00 PM</span>
+        <span>Kuala Lumpur, Malaysia</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <div class="header-left">
+        <button class="menu-btn" id="openMenu" aria-label="Open menu">☰</button>
+
+
+          
+          <a class="quick-card" href="#">
+            <div class="card-icon">🗓</div>
+            <h3>My Booking</h3>
+            <p>Check your work bookings, assignments, and shift-related information in one place.</p>
+            <span class="card-link">Open Section →</span>
+          </a>
+
+          <a class="quick-card" href="https://clcmitec.github.io/casualmitec-home/">
+            <div class="card-icon">✓</div>
+            <h3>Attendance</h3>
+            <p>Manage sign in, sign out, and attendance record tracking without messy back-and-forth.</p>
+            <span class="card-link">Open Section →</span>
+          </a>
+
+          <a class="quick-card" href="https://clcmitec.github.io/bank-details/">
+            <div class="card-icon">✎</div>
              <h3>First Time Application</h3>
             <p>New applicants can submit registration details here before any booking is considered.</p>
             <span class="card-link">Open Section →</span>
@@ -992,9 +1368,7 @@
           <div class="update-item">
             <span class="update-tag">Attendance</span>
             <h4>Attendance entries must be completed on time</h4>
-            <p>
-              Please ensure sign in and sign out are recorded correctly during your shift. Missing records become a problem later, and later is always uglier.
-            </p>
+            <p>Please ensure sign in and sign out are recorded correctly during your shift. Missing records become a problem later, and later is always uglier.</p>
             <div class="update-date">Updated today</div>
           </div>
 
